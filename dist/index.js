@@ -1,0 +1,5 @@
+"use strict";var u=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var s=u(function(p,m){
+var d=require('@stdlib/assert-has-own-property/dist'),o=require('@stdlib/assert-is-ndarray-like/dist'),v=require('@stdlib/assert-is-plain-object/dist'),f=require('@stdlib/assert-is-integer/dist'),g=require('@stdlib/ndarray-base-normalize-index/dist'),l=require('@stdlib/ndarray-base-to-reversed-dimension/dist'),q=require('@stdlib/ndarray-ndims/dist'),n=require('@stdlib/error-tools-fmtprodmsg/dist');function w(e,r){var a,t,i;if(!o(e))throw new TypeError(n('null4f',e));if(a={dim:-1},arguments.length>1){if(!v(r))throw new TypeError(n('null2V',r));if(d(r,"dim")){if(!f(r.dim))throw new TypeError(n('null8M',"dim",r.dim));a.dim=r.dim}}if(t=q(e),i=g(a.dim,t-1),i===-1)throw new RangeError(n("invalid option. Dimension index exceeds the number of dimensions. Number of dimensions: %d. Value: `%d`.",t,i));return l(e,i)}m.exports=w
+});var b=s();module.exports=b;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
